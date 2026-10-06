@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>NBRP Field Report</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <img src="nbrplogo.svg" alt="NBRP">
+    <strong>NBRP GLOBAL</strong>
+  </div>
+  <div class="top-actions">
+    <label class="language-wrap"><span data-i18n="language">Language</span><select id="languageSelect" aria-label="Language"></select></label>
+    <button id="newReportBtn" class="ghost" data-i18n="newReport">New Report</button>
+  </div>
+</header>
+
+<main class="shell">
+<section id="startView" class="card cover">
+  <div class="cover-product" data-i18n="productName">Field Report</div>
+  <h1 data-i18n="heroTitle">Turn job-site photos into a professional report</h1>
+  <p data-i18n="heroSubtitle">Create a report, add photos and notes, review it, then export a customer-ready PDF</p>
+  <button id="startBtn" class="primary" data-i18n="createReport">Create Report</button>
+</section>
+
+<section id="editorView" hidden>
+  <div class="steps"><span class="active" data-i18n="stepProject">1 Project</span><span data-i18n="stepPhotos">2 Photos</span><span data-i18n="stepReview">3 Review</span></div>
+  <form id="reportForm" class="card form">
+    <div class="section-title"><div><div class="eyebrow" data-i18n="reportDetails">REPORT DETAILS</div><h2 data-i18n="projectInformation">Project information</h2></div></div>
+    <div class="fields">
+      <label><span data-i18n="projectJobName">Project / Job Name</span><input id="projectName" required></label>
+      <label><span data-i18n="clientName">Client Name</span><input id="clientName"></label>
+      <label><span data-i18n="date">Date</span><input id="reportDate" type="date"></label>
+      <label><span data-i18n="referenceNumber">Reference Number</span><input id="reference"></label>
+      <label><span data-i18n="preparedBy">Prepared By / Company</span><input id="preparedBy"></label>
+      <label><span data-i18n="reportTitle">Report Title</span><input id="reportTitle"></label>
+    </div>
+    <div class="photo-section">
+      <div class="section-title"><div><div class="eyebrow" data-i18n="sitePhotos">SITE PHOTOS</div><h2 data-i18n="photosNotes">Photos &amp; Notes</h2></div><span id="photoCount" class="count">0 photos</span></div>
+      <label class="upload primary"><input id="photoInput" type="file" accept="image/*" multiple><span data-i18n="addPhotos">+ Add Photos</span></label>
+      <p class="hint" data-i18n="photoHint">On mobile, your browser can offer the camera or photo library. Add more photos anytime.</p>
+      <div id="photoList" class="photo-list"></div>
+    </div>
+    <div class="actions"><button type="button" id="previewBtn" class="primary" data-i18n="previewReport">Preview Report</button></div>
+  </form>
+</section>
+
+<section id="previewView" hidden>
+  <div class="preview-bar"><button id="backBtn" class="ghost" data-i18n="backToEdit">Back to Edit</button><button id="printBtn" class="primary" data-i18n="generatePdf">Generate PDF</button></div>
+  <div id="reportPreview" class="report"></div>
+</section>
+</main>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
