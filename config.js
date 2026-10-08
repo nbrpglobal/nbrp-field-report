@@ -1,0 +1,3 @@
+window.NBRP_CONFIG = {
+  API_BASE: 'https://REPLACE_WITH_YOUR_WORKER_DOMAIN'
+}
