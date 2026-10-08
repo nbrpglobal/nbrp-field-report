@@ -1,0 +1,16 @@
+name = "nbrp-fieldreport-api"
+main = "worker.js"
+compatibility_date = "2026-10-08"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "nbrp-fieldreport"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "nbrp-fieldreport-media"
+
+[vars]
+APP_ORIGIN = "https://REPLACE_WITH_YOUR_PAGES_DOMAIN"
+SESSION_DAYS = "14"
