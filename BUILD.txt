@@ -1,5 +1,0 @@
-BUILD 2026-10-11-0155-DISCLAIMER-CUSTOM
-- Custom persistent disclaimer template (Pro)
-- Placeholder: Save custom disclaimer templates on Pro
-- Pricing: custom disclaimer templates
-- Pro link: CUSTOM DISCLAIMER TEMPLATES
