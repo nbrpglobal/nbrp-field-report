@@ -1,0 +1,10 @@
+field-report-flat BUILD 2026-10-11-0058
+Includes:
+- FR-YYYYMMDD-001 report numbers (no NBRP)
+- Pro disclaimer auto-template
+- Forgot Password + supabase.auth.resetPasswordForEmail
+- btn-row-actions margin-top 24px
+- app_lang persistence
+- Auth gate PDF/Save
+- nowrap AUTO-NUMBERING
+
