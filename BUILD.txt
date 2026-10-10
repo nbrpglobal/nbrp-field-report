@@ -1,6 +1,0 @@
-field-report-flat BUILD 2026-10-11-0110-PRO-FIX
-1 FR-YYYYMMDD-001 auto on Pro/Admin
-2 Disclaimer auto-template on Pro/Admin  
-3 Forgot Password + resetPasswordForEmail
-4 btn-row-actions margin-top 24px
-5 isProUser persisted so unlock survives reload
